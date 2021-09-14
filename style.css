@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+select, button {
+    cursor: pointer;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(4, 28, 34);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.logo-area img {
+    width: 100px;
+    height: 100px;
+}
+
+.container h1,
+.container p,
+.initial-currency-area,
+.swap-area,
+.final-currency-area {
+    margin: 15px 0;
+}
+
+.calculator-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 15px auto;
+    width: 475px;
+}
+
+.initial-currency-area,
+.swap-area,
+.final-currency-area {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+select {
+    width: 60px;
+    height: 2.5em;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.initial-currency-area input {
+    width: 120px;
+    background-color: inherit;
+    border: none;
+    text-align: right;
+    font-family: inherit;
+    color: inherit;
+}
+
+.swap-area button {
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 7px 12px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    transition: 0.3s;
+}
+
+.swap-area button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.initial-value,
+.final-value {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.final-value {
+    padding-right: 14px;
+}
+
+.rate {
+    font-size: 0.8em;
+    font-weight: 900;
+    color: rgb(240, 239, 215);
+}
